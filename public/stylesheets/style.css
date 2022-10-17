@@ -1,0 +1,33 @@
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+#navbarNav {
+  justify-content: flex-end;
+}
+.about {
+  height: 100vh;
+}
+.form-control {
+  background: transparent;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: none;
+  font-weight: bold;
+  margin: 16px 0;
+}
+.submit-btn {
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+}

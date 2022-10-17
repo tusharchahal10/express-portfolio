@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/header'); %>
+  <body>
+    <%- include('partials/nav',{screen:"contact"}); %>
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <img
+              src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29udGFjdHxlbnwwfHwwfHw%3D&w=1000&q=80"
+              alt=""
+              class="image-fluid w-100"
+            />
+
+            <div
+              class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5"
+            >
+              <div class="contact-info-item">
+                <h3 class="mb-3">Say hello</h3>
+                <p class="footer-text mb-0">010 020 0960</p>
+                <p><a href="mailto:hello@company.co">hello@company.co</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div>
+              <h3 class="mb-4">Interested to work together? Let's talk</h3>
+
+              <form action="/home" method="get">
+                <div class="row">
+                  <!-- Name -->
+                  <div class="col-lg-6 col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="firstname"
+                      placeholder="First Name"
+                      id="firstname"
+                    />
+                  </div>
+
+                  <div class="col col-lg-6 col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="lastname"
+                      placeholder="Sure Name"
+                      id="lastname"
+                    />
+                  </div>
+
+                  <!-- email input -->
+                  <div class="col-lg-6 col-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      id="email"
+                    />
+                  </div>
+
+                  <!-- contact -->
+                  <div class="col-lg-6 col-12">
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="number"
+                      placeholder="Phone number"
+                      id="number"
+                    />
+                  </div>
+
+                  <!-- message -->
+                  <div class="col-12">
+                    <textarea
+                      name="message"
+                      rows="6"
+                      class="form-control"
+                      id="message"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input
+                      type="submit"
+                      class="form-control submit-btn btn-primary"
+                      value="Send Button"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
