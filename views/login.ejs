@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/header'); %>
+  <body>
+    <%- include('partials/nav'); %>
+    <div
+      class="container min-vh-100 container-fluid d-flex justify-content-center align-items-center"
+    >
+      <div class="row">
+        <div class="col">
+          <img
+            class="image-fluid"
+            src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?w=2000"
+            alt=""
+          />
+        </div>
+        <div
+          class="col d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1 class="my-4">Login</h1>
+
+          <form
+            action="/login"
+            method="POST"
+            style="max-width: 360px"
+            class="form w-100 p-4 border rounded"
+          >
+            <input
+              type="email"
+              name="email"
+              class="form-control my-3"
+              id="email"
+              placeholder="Enter email"
+            />
+
+            <input
+              type="password"
+              name="password"
+              class="form-control my-3"
+              id="password"
+              placeholder="Enter password"
+            />
+
+            <button type="submit" class="w-100 btn btn-primary">Login</button>
+          </form>
+
+          <% if(messages.error) { %>
+          <div
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+          >
+            <%= messages.error %>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
