@@ -2,8 +2,12 @@
 <html>
   <%- include('partials/header'); %>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %>'s Portfolio</p>
-    <a href="/home" class="btn btn-primary">Home</a>
+    <div
+      class="d-flex min-vh-100 flex-column justify-content-center align-items-center"
+    >
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %>'s Portfolio</p>
+      <a href="/home" class="btn btn-primary">Home</a>
+    </div>
   </body>
 </html>
