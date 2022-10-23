@@ -14,6 +14,7 @@ const initialize = require('./passport-config');
 initialize(passport);
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 // view engine
 app.set('views', path.join(__dirname, 'views'));
@@ -77,6 +78,6 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-app.listen(5000, () => {
-  console.log(`app running on port 5000`);
+app.listen(port, () => {
+  console.log(`app running on port ${port}`);
 });
